@@ -1,35 +1,45 @@
-# Lab Week 2: Version Control & Collaborative Development
+# ปฏิบัติการสัปดาห์ที่ 2: Version Control & Collaborative Development
 
-## 🎯 Course Overview
-- **Course:** ENGCE301 Software Design and Development
-- **Topic:** Git Version Control & Working in Teams
+## 🎯 ภาพรวมรายวิชา
+- **วิชา:** ENGCE301 การออกแบบและพัฒนาซอฟต์แวร์ (Software Design and Development)
+- **หัวข้อ:** การควบคุมเวอร์ชันด้วย Git และการทำงานร่วมกันเป็นทีม
 
-## 📚 Core Concepts
+## 📚 แนวคิดหลักที่เรียนรู้
 
-### Version Control System (VCS)
-A system that records changes to a file or set of files over time so that you can recall specific versions later. **Git** is the industry standard distributed VCS.
+### ระบบควบคุมเวอร์ชัน (Version Control System - VCS)
+ระบบที่บันทึกการเปลี่ยนแปลงของไฟล์หรือชุดไฟล์เมื่อเวลาผ่านไป เพื่อให้สามารถเรียกดูเวอร์ชันเฉพาะเจาะจงในภายหลังได้ โดย **Git** เป็นมาตรฐานอุตสาหกรรมในปัจจุบัน
 
-### Git Workflows
-In professional environments, we use workflows like **Gitflow** or **Feature Branch Workflow**:
-1.  **Main Branch:** The stable, production-ready code.
-2.  **Feature Branches:** Used for developing new features. This keeps the main branch clean.
-3.  **Pull Requests (PR):** A way to notify team members about changes and request a code review.
-4.  **Code Review:** The process of examining code for quality and bugs before merging.
+### กระบวนการทำงานด้วย Git (Git Workflows)
+ในการทำงานระดับมืออาชีพ เราจะใช้กระบวนการ เช่น **Gitflow** หรือ **Feature Branch Workflow**:
+1.  **Main Branch:** สายงานหลักที่เป็นโค้ดเวอร์ชันที่เสถียรและพร้อมใช้งานจริง
+2.  **Feature Branches:** สายงานย่อยที่แยกออกมาเพื่อพัฒนาฟีเจอร์ใหม่ เพื่อไม่ให้รบกวนงานหลัก
+3.  **Pull Requests (PR):** วิธีการแจ้งสมาชิกในทีมเกี่ยวกับการเปลี่ยนแปลงและร้องขอให้รีวิวโค้ด
+4.  **Code Review:** กระบวนการตรวจสอบโค้ดเพื่อหาจุดบกพร่องและควบคุมคุณภาพก่อนนำไปรวมกับงานหลัก
 
-## 🛠️ Essential Git Commands
-| Command | Description |
+## 🛠️ คำสั่ง Git ที่สำคัญ
+| คำสั่ง | คำอธิบาย |
 | --- | --- |
-| `git clone` | Copy a repository to your local machine |
-| `git branch` | List, create, or delete branches |
-| `git checkout` | Switch between branches |
-| `git add` | Stage changes for commit |
-| `git commit` | Record changes to the repository |
-| `git push` | Upload local changes to a remote repository |
-| `git pull` | Fetch and merge changes from a remote repository |
-| `git merge` | Join two or more development histories together |
+| `git clone` | คัดลอก Repository มาไว้ที่เครื่องเครื่องคอมพิวเตอร์ของเรา |
+| `git branch` | แสดงรายการ, สร้าง หรือลบ Branch |
+| `git checkout` | สลับการทำงานไปมาระหว่าง Branch |
+| `git add` | เตรียมไฟล์เพื่อพร้อมสำหรับการ Commit |
+| `git commit` | บันทึกการเปลี่ยนแปลงลงใน Repository |
+| `git push` | ส่งการเปลี่ยนแปลงที่บันทึกไว้ไปยัง Server |
+| `git pull` | ดึงการเปลี่ยนแปลงล่าสุดจาก Server มาไว้ที่เครื่อง |
+| `git merge` | รวมสายงานย่อยเข้ากับสายงานหลัก |
 
-## 💻 Workshop: Git Simulation
-This lab involves simulating a collaborative workflow by creating a feature branch, making changes, and merging them back to the main branch.
+## 💻 กิจกรรมปฏิบัติการ: จำลองการทำงานร่วมกัน
+ในสัปดาห์นี้ได้จำลองการทำงานที่เป็นขั้นเป็นตอน โดยการสร้าง Feature Branch, ทำการแก้ไขงาน และทำการ Merge กลับเข้าสู่สายงานหลัก (Main Branch)
+
+## 📝 สรุปสิ่งที่ทำในสัปดาห์ที่ 2
+1.  **การทำงานด้วย Workflow:** ฝึกฝนการใช้ **Feature Branch Workflow**
+2.  **การจัดการสาขา (Branching):** สร้างสาขาเฉพาะกิจ `feature/git-workshop` สำหรับงานใหม่
+3.  **คำสั่ง Git ขั้นสูง:**
+    - ฝึกการ Commit ที่มีความหมายและเป็นหมวดหมู่
+    - การสลับ Branch ไปมาด้วย `git checkout`
+    - การรวมโค้ดเข้าสู่ `main` ด้วยคำสั่ง `git merge`
+4.  **ทฤษฎีการทำงานเป็นทีม:** ศึกษาบทบาทของ Pull Requests และ Code Review
+5.  **การจัดทำเอกสาร:** รักษามาตรฐานการจัดทำเอกสารด้วย `README.md` และ `reflection.md`
 
 ---
-*Created as part of the ENGCE301 Laboratory sessions.*
+*จัดทำขึ้นเพื่อใช้ประกอบการเรียนวิชา ENGCE301*

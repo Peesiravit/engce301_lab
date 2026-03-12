@@ -1,42 +1,41 @@
-# Lab Week 1: Introduction to Software Engineering
+# ปฏิบัติการสัปดาห์ที่ 1: Introduction to Software Engineering
 
-## 🎯 Course Overview
-- **Course:** ENGCE301 Software Design and Development
-- **Topic:** Introduction to Software Engineering & SDLC
+## 🎯 ภาพรวมรายวิชา
+- **วิชา:** ENGCE301 การออกแบบและพัฒนาซอฟต์แวร์ (Software Design and Development)
+- **หัวข้อ:** แนะนำวิศวกรรมซอฟต์แวร์ และ SDLC
 
-## 📚 Core Concepts
+## 📚 แนวคิดหลักที่เรียนรู้
 
-### Software Development Life Cycle (SDLC)
-SDLC is a structured process used by software engineers to design, develop, and test high-quality software. Common models include:
-- **Agile:** Iterative development focusing on flexibility and customer feedback.
-- **DevOps:** Integration of development and operations to shorten the development lifecycle.
+### วงจรการพัฒนาซอฟต์แวร์ (Software Development Life Cycle - SDLC)
+SDLC คือกระบวนการที่มีโครงสร้างซึ่งวิศวกรซอฟต์แวร์ใช้ในการออกแบบ พัฒนา และทดสอบซอฟต์แวร์ที่มีคุณภาพสูง โมเดลที่พบบ่อย ได้แก่:
+- **Agile:** การพัฒนาที่เน้นความคล่องตัว การทำงานซ้ำ (iteration) และการรับฟังความคิดเห็นจากลูกค้า
+- **DevOps:** การรวมกันระหว่างการพัฒนา (Development) และทีมปฏิบัติการ (Operations) เพื่อทำให้วงจรการพัฒนารวดเร็วขึ้น
 
-### Role of a Software Engineer
-A Software Engineer applies engineering principles to the design, development, maintenance, testing, and evaluation of computer software. Key responsibilities include:
-- Requirement gathering and analysis.
-- System design and architecture.
-- Coding and implementation.
-- Testing and quality assurance.
-- Maintenance and updates.
+### บทบาทของวิศวกรซอฟต์แวร์ (Software Engineer)
+วิศวกรซอฟต์แวร์ใช้หลักการทางวิศวกรรมในการออกแบบ พัฒนา บำรุงรักษา ทดสอบ และประเมินผลซอฟต์แวร์คอมพิวเตอร์ หน้าที่หลัก ได้แก่:
+- การรวบรวมและวิเคราะห์ความต้องการ (Requirements)
+- การออกแบบระบบและสถาปัตยกรรม
+- การเขียนโปรแกรมและการดำเนินงาน
+- การทดสอบและการรับประกันคุณภาพ (QA)
+- การบำรุงรักษาและอัปเดตระบบ
 
-## 🛠️ Tools Used
-- **VS Code:** Modern code editor.
-- **Node.js:** JavaScript runtime.
-- **Git & GitHub:** Version control and collaboration.
+## 🛠️ เครื่องมือที่ใช้ในสัปดาห์นี้
+- **VS Code:** เครื่องมือสำหรับเขียนโค้ด
+- **Node.js:** ตัวรัน JavaScript (Runtime)
+- **Git & GitHub:** สำหรับควบคุมเวอร์ชันและการทำงานร่วมกัน
 
-## 💻 Workshop: Hello World
-This lab includes a premium "Hello World" landing page built with semantic HTML, modern CSS, and interactive JavaScript.
+## 💻 กิจกรรมปฏิบัติการ: Hello World
+ในสัปดาห์นี้ได้สร้างหน้า Landing Page "Hello World" ที่มีความเป็นมืออาชีพ โดยใช้โครงสร้าง HTML ที่มีความหมาย (Semantic HTML), การตกแต่งด้วย CSS ที่ทันสมัย และ JavaScript ที่โต้ตอบกับผู้ใช้ได้
 
-## 📝 Lab Activities (Week 1)
-In this first week, I have successfully:
-1.  **Environment Setup:** Installed and configured VS Code, Node.js, and Git.
-2.  **Project Initialization:** Created the laboratory repository structure.
-3.  **Frontend Development:** 
-    - Designed a premium "Hello World" page using **HTML5**.
-    - Implemented a modern **Glassmorphism** UI with **CSS3**.
-    - Added **interactive micro-animations** using **JavaScript (ES6+)**.
-4.  **Version Control:** Learned basic Git commands (`commit`, `push`) and documentation best practices.
-5.  **Documentation:** Created a structured `README.md` and a personal `reflection.md` for the week.
+## 📝 สรุปสิ่งที่ทำในสัปดาห์ที่ 1
+1.  **การติดตั้งสภาพแวดล้อม:** ติดตั้งและกำหนดค่า VS Code, Node.js และ Git
+2.  **การเริ่มต้นโปรเจกต์:** สร้างโครงสร้าง Repository สำหรับเก็บผลงานปฏิบัติการ
+3.  **การพัฒนา Frontend:** 
+    - ออกแบบหน้า "Hello World" โดยใช้ **HTML5**
+    - ใช้เทคนิค **Glassmorphism** ในการออกแบบ UI ด้วย **CSS3**
+    - เพิ่ม **Micro-animations** ผ่าน **JavaScript (ES6+)**
+4.  **การควบคุมเวอร์ชัน:** เรียนรู้คำสั่ง Git พื้นฐาน (`commit`, `push`) และแนวทางปฏิบัติที่ดีในการจัดทำเอกสาร
+5.  **การจัดทำเอกสาร:** สร้าง `README.md` และสรุปบทเรียนใน `reflection.md`
 
 ---
-*Created as part of the ENGCE301 Laboratory sessions.*
+*จัดทำขึ้นเพื่อใช้ประกอบการเรียนวิชา ENGCE301*
