@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 4: Prevent Default</title>
+</head>
+<body>
+    <a href="https://google.com" id="myLink">ไปที่ Google (โดนระงับการเปลี่ยนหน้า)</a>
+
+    <script>
+        document.getElementById('myLink').addEventListener('click', (event) => {
+            event.preventDefault();
+            alert('การเปลี่ยนหน้าถูกระงับโดย preventDefault()');
+        });
+    </script>
+</body>
+</html>

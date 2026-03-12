@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>API Tester | Week 6</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        button { padding: 10px 20px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Product API Tester</h1>
+        <button onclick="loadProducts()">โหลดรายการสินค้า</button>
+        <div id="list"></div>
+        <hr>
+        <h3>เพิ่มสินค้า</h3>
+        <input type="text" id="name" placeholder="ชื่อสินค้า">
+        <input type="number" id="price" placeholder="ราคา">
+        <button onclick="addProduct()">เพิ่ม</button>
+    </div>
+
+    <script>
+        async function loadProducts() {
+            const res = await fetch('http://localhost:3000/api/products');
+            const data = await res.json();
+            document.getElementById('list').innerHTML = data.map(p => `<li>${p.name} - ${p.price} บาท</li>`).join('');
+        }
+
+        async function addProduct() {
+            const name = document.getElementById('name').value;
+            const price = document.getElementById('price').value;
+            await fetch('http://localhost:3000/api/products', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, price })
+            });
+            loadProducts();
+        }
+    </script>
+</body>
+</html>

@@ -1,30 +1,31 @@
-# ปฏิบัติการสัปดาห์ที่ 7: Frontend Development with React
+# ปฏิบัติการสัปดาห์ที่ 7: Cloud Deployment & 12-Factor App (Refactored)
 
 ## 🎯 ภาพรวมรายวิชา
 - **วิชา:** ENGCE301 การออกแบบและพัฒนาซอฟต์แวร์ (Software Design and Development)
-- **หัวข้อ:** การพัฒนาส่วนหน้า (Frontend) ด้วย React.js
+- **หัวข้อ:** การนำซอฟต์แวร์ขึ้นระบบคลาวด์ (Cloud Deployment) และหลักการ 12-Factor App
 
 ## 📚 แนวคิดหลักที่เรียนรู้
 
-### การจัดการสถานะ (State Management)
-ในสัปดาห์นี้เราได้เรียนรู้วิธีจัดการข้อมูลที่ซับซ้อนขึ้น เช่น รายการงาน (Array of Objects) โดยใช้ Hook ที่สำคัญ:
-- **useState:** สำหรับจัดการข้อมูลที่เปลี่ยนแปลงได้ใน Component
-- **useEffect:** สำหรับจัดการ Side Effects เช่น การโหลดข้อมูลจาก localStorage เมื่อเริ่มแอป
+### 12-Factor App Methodology
+แนวทางปฏิบัติที่ดีที่สุดสำหรับการสร้างซอฟต์แวร์ในรูปแบบ Software-as-a-Service (SaaS) ที่เหมาะกับระบบคลาวด์ เช่น:
+- **Config:** การแยกค่ากำหนดต่างๆ (เช่น Database URL) ออกจากโค้ดมาไว้ใน Environment Variables
+- **Port Binding:** แอปควร export ตัวเองเป็น service ผ่านพอร์ตที่กำหนด
+- **Logs:** ปฏิบัติต่อ logs เสมือนเป็น event streams
 
-### การจัดการอีเวนต์และการโต้ตอบ (Event Handling)
-เรียนรู้วิธีรับค่าจากฟอร์ม (Form Inputs) และการส่งฟังก์ชันไปจัดการการคลิก (Buttons) เพื่อเพิ่ม ลบ หรือแก้ไขข้อมูลในรายการงาน
+### Cloud Platform (PaaS)
+การใช้งาน Platform-as-a-Service เช่น **Railway** เพื่อช่วยลดภาระในการจัดการโครงสร้างพื้นฐาน (Server, OS, Network) ทำให้นักพัฒนาสามารถโฟกัสที่การเขียนโค้ดและการ Deploy ได้ทันที
 
-### การเก็บข้อมูลฝั่งไคลเอนต์ (Client-side Persistence)
-เพื่อให้แอปพลิเคชันใช้งานได้จริง เราได้นำ **localStorage** มาใช้เพื่อบันทึกข้อมูลรายการงานไว้ในเบราว์เซอร์ ทำให้ข้อมูลไม่หายไปเมื่อผู้ใช้รีเฟรชหน้าจอ
+### Environment Variables
+การใช้ไฟล์ `.env` เพื่อเก็บความลับ (Secrets) และค่าที่เปลี่ยนแปลงตามสภาพแวดล้อม (Development/Production) เพื่อความปลอดภัยและความยืดหยุ่น
 
-## 🛠️ ขั้นตอนการพัฒนา
-1.  **Project Initialization:** ตั้งค่าโครงสร้างโปรเจกต์และส่วนประกอบพื้นฐาน
-2.  **State Logic:** เขียนฟังก์ชัน CRUD (Create, Read, Update, Delete) สำหรับจัดการ Tasks
-3.  **UI Implementation:** ตกแต่งหน้าจอด้วย CSS/Glassmorphism ให้ดูสวยงามและใช้งานง่าย
-4.  **Local Persistence:** เพิ่มขีดความสามารถในการจำค่าข้อมูลด้วย localStorage
+## 🛠️ ขั้นตอนการพัฒนา (Refactored)
+1.  **Code Preparation:** การนำ Configuration ออกจากโค้ดและเตรียมความพร้อมสำหรับ Cloud-Native
+2.  **Deployment Documentation:** บันทึกขั้นตอนการนำ N-Tier Services ขึ้นระบบ Railway ใน `CLOUD_DEPLOYMENT.md`
+3.  **12-Factor Check:** ตรวจสอบว่าแอปพลิเคชันของเราเป็นไปตามหลักการ 12-Factor App หรือไม่
+4.  **Scaling Concept:** ทำความเข้าใจเรื่องการ Scaling ของ PaaS เมื่อมีผู้ใช้งานเพิ่มขึ้น
 
-## 💻 กิจกรรมปฏิบัติการ: การสร้าง Task Management App
-ในสัปดาห์นี้ได้พัฒนาแอปพลิเคชันจัดการงานแบบเต็มรูปแบบ (Full Frontend) ที่รองรับการเพิ่มงาน การเปลี่ยนสถานะ และการบันทึกข้อมูลถาวร
+## 💻 กิจกรรมปฏิบัติการ: การนำระบบขึ้น Cloud
+ในสัปดาห์นี้เราได้นำความรู้จากสัปดาห์ก่อนหน้า (Docker/N-Tier) มาประยุกต์ใช้ในการ Deploy ระบบจริงสู่สาธารณะ
 
 ---
 *จัดทำขึ้นเพื่อใช้ประกอบการเรียนวิชา ENGCE301*

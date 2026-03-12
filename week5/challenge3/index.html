@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 3: Event Listeners</title>
+</head>
+<body>
+    <button id="myBtn">คลิกฉันสิ!</button>
+
+    <script>
+        const btn = document.getElementById('myBtn');
+        btn.addEventListener('click', () => {
+            alert('คุณคลิกปุ่มแล้ว!');
+            btn.textContent = 'ขอบคุณที่คลิก!';
+        });
+    </script>
+</body>
+</html>

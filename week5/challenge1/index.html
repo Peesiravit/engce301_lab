@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 1: Styling with JS</title>
+</head>
+<body>
+    <p id="target">ข้อความนี้จะเปลี่ยนสีและขนาดเมื่อคลิกปุ่ม</p>
+    <button onclick="changeStyle()">เปลี่ยนสไตล์</button>
+
+    <script>
+        function changeStyle() {
+            const p = document.getElementById('target');
+            p.style.color = 'blue';
+            p.style.fontSize = '24px';
+        }
+    </script>
+</body>
+</html>

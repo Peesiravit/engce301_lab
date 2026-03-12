@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 2: QuerySelector</title>
+</head>
+<body>
+    <div id="container">
+        <p>ย่อหน้าที่ 1</p>
+        <p>ย่อหน้าที่ 2</p>
+        <p>ย่อหน้าที่ 3 (เป้าหมาย)</p>
+    </div>
+    <button onclick="highlight()">เน้นข้อความ</button>
+
+    <script>
+        function highlight() {
+            const target = document.querySelector('#container p:nth-child(3)');
+            target.style.backgroundColor = 'yellow';
+            target.style.fontWeight = 'bold';
+        }
+    </script>
+</body>
+</html>
