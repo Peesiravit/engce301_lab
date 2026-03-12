@@ -27,5 +27,16 @@ A Software Engineer applies engineering principles to the design, development, m
 ## 💻 Workshop: Hello World
 This lab includes a premium "Hello World" landing page built with semantic HTML, modern CSS, and interactive JavaScript.
 
+## 📝 Lab Activities (Week 1)
+In this first week, I have successfully:
+1.  **Environment Setup:** Installed and configured VS Code, Node.js, and Git.
+2.  **Project Initialization:** Created the laboratory repository structure.
+3.  **Frontend Development:** 
+    - Designed a premium "Hello World" page using **HTML5**.
+    - Implemented a modern **Glassmorphism** UI with **CSS3**.
+    - Added **interactive micro-animations** using **JavaScript (ES6+)**.
+4.  **Version Control:** Learned basic Git commands (`commit`, `push`) and documentation best practices.
+5.  **Documentation:** Created a structured `README.md` and a personal `reflection.md` for the week.
+
 ---
 *Created as part of the ENGCE301 Laboratory sessions.*
